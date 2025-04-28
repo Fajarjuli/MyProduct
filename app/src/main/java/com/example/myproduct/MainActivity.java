@@ -1,14 +1,13 @@
 package com.example.myproduct;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,33 +15,40 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rvProducts;
-    private ProductAdapter productAdapter;
+    private ProductAdapter adapter;
     private List<Product> productList;
     private EditText etSearch;
-    private FloatingActionButton fabAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // 1. Inisialisasi View
         rvProducts = findViewById(R.id.rvProducts);
-        etSearch = findViewById(R.id.etSearch);
-        fabAdd = findViewById(R.id.fabAdd);
+        etSearch   = findViewById(R.id.etSearch);
 
+        // 2. Setup RecyclerView
         rvProducts.setLayoutManager(new GridLayoutManager(this, 2));
-
         productList = new ArrayList<>();
+        // Tambahkan data produk
         productList.add(new Product("Macbook Air 2022", "Apple", R.drawable.macbook));
         productList.add(new Product("Women's Air Jordan 1", "Air Jordan", R.drawable.sneaker));
         productList.add(new Product("Fear Of God Hoodie", "Fear Of God", R.drawable.hoodie));
         productList.add(new Product("LVXN8 Backpack", "Louis Vuitton", R.drawable.backpack));
 
-        productAdapter = new ProductAdapter(productList);
-        rvProducts.setAdapter(productAdapter);
+        adapter = new ProductAdapter(productList);
+        rvProducts.setAdapter(adapter);
 
-        fabAdd.setOnClickListener(view ->
-                Toast.makeText(MainActivity.this, "Tambah produk baru!", Toast.LENGTH_SHORT).show()
-        );
+        // 3. Pasang listener untuk filter search
+        etSearch.addTextChangedListener(new TextWatcher() {
+            @Override public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
+            @Override public void afterTextChanged(Editable s) { }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                adapter.filter(s.toString());
+            }
+        });
     }
 }
