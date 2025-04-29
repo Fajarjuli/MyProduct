@@ -11,6 +11,9 @@
 ## Trello kelompok
 ![image](screenshot/sstrello1.png)
 
+## Trello Individu
+![image](screenshot/sstrello2.png)
+
 # 📲 My Product
 
 **My Product** adalah aplikasi Android yang dirancang untuk memudahkan pengguna dalam melihat, mengelola, dan mengetahui detail produk yang dimiliki. Aplikasi ini cocok digunakan oleh pengguna yang ingin menampilkan daftar produk, mengelompokkan produk berdasarkan kategori, serta menampilkan informasi lengkap dari masing-masing produk.
@@ -35,6 +38,10 @@
 
 # Desain UI
 ![image](screenshot/MyProduct.png)
+
+# StoryBoard Aplikasi
+![image](screenshot/StoryBoard.png)
+
 
 
 
