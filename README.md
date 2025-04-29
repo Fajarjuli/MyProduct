@@ -1,10 +1,13 @@
-# My-Product1
+# My Product
 
 | Nama Anggota | NIM |
 | -----| ------------------ |
 |Akbar Rizki Ramadhan   | 312310696  |
 |Fajar Julianwar Muslimin | 312310672 |
 |M Iqbal Al Anshori | 312310659 |
+
+## Trello kelompok
+![image](screensot/sstrello1.png)
 
 # 📲 My Product
 
@@ -29,8 +32,7 @@
 ---
 
 # Desain UI
+![image](screenshot/MyProduct.png)
 
 
 
-
-# On going project
