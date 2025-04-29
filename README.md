@@ -1,4 +1,6 @@
-# My Product
+# Pemograman mobile 2
+
+## Aplikasi My Product
 
 | Nama Anggota | NIM |
 | -----| ------------------ |
@@ -7,11 +9,11 @@
 |M Iqbal Al Anshori | 312310659 |
 
 ## Trello kelompok
-![image](screensot/sstrello1.png)
+![image](screenshot/sstrello1.png)
 
 # 📲 My Product
 
-**My Product** adalah aplikasi Android yang memudahkan pengguna untuk melihat produk yang dimiliki, mengetahui detail produk, dan memilih kategori produk. Aplikasi ini cocok digunakan oleh pengguna untuk bisa melihat produk dan melihat detail dari produk tersebut.
+**My Product** adalah aplikasi Android yang dirancang untuk memudahkan pengguna dalam melihat, mengelola, dan mengetahui detail produk yang dimiliki. Aplikasi ini cocok digunakan oleh pengguna yang ingin menampilkan daftar produk, mengelompokkan produk berdasarkan kategori, serta menampilkan informasi lengkap dari masing-masing produk.
 
 
 ---
